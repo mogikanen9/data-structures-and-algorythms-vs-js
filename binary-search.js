@@ -1,3 +1,4 @@
+/* Assumption - array is already sorted */
 function binarySearch(numbers,element){
   if(numbers.length==0){
     return false;
@@ -18,6 +19,7 @@ function binarySearch(numbers,element){
   }
 }
 
+/* Basic test */
 var numbers = [1,3,5,7,9];
 
 for(var i=0;i<=10;i++){
