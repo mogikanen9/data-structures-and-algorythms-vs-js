@@ -1,6 +1,5 @@
 var SingleTonClass = (function(){
   var instance;
-
  return {
    getInstance: function(){
      if(instance == null){
@@ -8,11 +7,10 @@ var SingleTonClass = (function(){
      }
      return instance;
    }
-
  }
-
 })();
 
+/* Basic test */
 var instanceA = SingleTonClass.getInstance();
 var instanceB = SingleTonClass.getInstance();
 var theSame = instanceA === instanceB;
