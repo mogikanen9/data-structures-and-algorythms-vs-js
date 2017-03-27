@@ -1,4 +1,4 @@
-var SingleTonClass = (function(){
+var SingletonClass = (function(){
   var instance;
  return {
    getInstance: function(){
@@ -11,7 +11,7 @@ var SingleTonClass = (function(){
 })();
 
 /* Basic test */
-var instanceA = SingleTonClass.getInstance();
-var instanceB = SingleTonClass.getInstance();
+var instanceA = SingletonClass.getInstance();
+var instanceB = SingletonClass.getInstance();
 var theSame = instanceA === instanceB;
 console.log(theSame);
